@@ -1,14 +1,27 @@
 {
-  "name": "@node-expressgateway-kafka-nx/source",
+  "name": "node-expressgateway-kafka-nx",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
-  "private": true,
+  "scripts": {
+    "start:api-gateway": "nx serve api-gateway",
+    "start:billing": "nx serve billing",
+    "start:users": "nx serve users",
+    "start:logs": "nx serve logs",
+    "build:api-gateway": "nx build api-gateway",
+    "build:billing": "nx build billing",
+    "build:users": "nx build users",
+    "build:logs": "nx build logs"
+  },
   "dependencies": {
     "@nestjs/common": "^10.0.2",
+    "@nestjs/config": "^3.2.2",
     "@nestjs/core": "^10.0.2",
+    "@nestjs/microservices": "^10.3.8",
+    "@nestjs/mongoose": "^10.0.6",
     "@nestjs/platform-express": "^10.0.2",
     "axios": "^1.6.0",
+    "kafkajs": "^2.2.4",
+    "mongoose": "^8.3.4",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0",
     "tslib": "^2.3.0"
