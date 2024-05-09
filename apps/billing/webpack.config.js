@@ -3,7 +3,7 @@ const { join } = require('path');
 
 module.exports = {
   output: {
-    path: join(__dirname, '../../dist/apps/node-expressgateway-kafka-nx'),
+    path: join(__dirname, '../../dist/apps/billing'),
   },
   plugins: [
     new NxAppWebpackPlugin({

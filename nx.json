@@ -34,7 +34,13 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": ["apps/node-expressgateway-kafka-nx-e2e/**/*"]
+      "exclude": [
+        "apps/node-expressgateway-kafka-nx-e2e/**/*",
+        "apps/api-gateway-e2e/**/*",
+        "apps/billing-e2e/**/*",
+        "apps/users-e2e/**/*",
+        "apps/logs-e2e/**/*"
+      ]
     }
   ]
 }
