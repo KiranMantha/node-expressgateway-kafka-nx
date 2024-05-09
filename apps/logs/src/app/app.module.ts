@@ -7,7 +7,7 @@ import { LogSchema } from './logs.schema';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({ envFilePath: '.env', isGlobal: true }),
+    ConfigModule.forRoot({ isGlobal: true }),
     MongooseModule.forRoot(process.env.DB_URL, {
       dbName: 'logs'
     }),

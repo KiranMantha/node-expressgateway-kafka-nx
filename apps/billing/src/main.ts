@@ -3,6 +3,7 @@
  * This is only a minimal backend to get started.
  */
 
+import { Logger } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { MicroserviceOptions, Transport } from '@nestjs/microservices';
 import { AppModule } from './app/app.module';
@@ -23,7 +24,7 @@ async function bootstrap() {
       }
     }
   );
-  console.log('\nbilling service started\n');
+  Logger.log('billing micro-service is running successfully');
   await app.listen();
 }
 

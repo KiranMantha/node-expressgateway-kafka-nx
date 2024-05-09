@@ -3,6 +3,7 @@
  * This is only a minimal backend to get started.
  */
 
+import { Logger } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { MicroserviceOptions, Transport } from '@nestjs/microservices';
 import { AppModule } from './app/app.module';
@@ -23,11 +24,8 @@ async function bootstrap() {
       }
     }
   );
-  console.log('\nlogs service started\n');
+  Logger.log('logs micro-service is running successfully');
   await app.listen();
-  // Logger.log(
-  //   `🚀 Application is running on: http://localhost:${port}/`
-  // );
 }
 
 bootstrap();
