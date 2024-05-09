@@ -14,6 +14,13 @@
     ],
     "sharedGlobals": []
   },
+  "targetDefaults": {
+    "build": {
+      "options": {
+        "generatePackageJson": true
+      }
+    }
+  },
   "plugins": [
     {
       "plugin": "@nx/webpack/plugin",
@@ -35,7 +42,6 @@
         "targetName": "test"
       },
       "exclude": [
-        "apps/node-expressgateway-kafka-nx-e2e/**/*",
         "apps/api-gateway-e2e/**/*",
         "apps/billing-e2e/**/*",
         "apps/users-e2e/**/*",
